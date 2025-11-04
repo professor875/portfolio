@@ -42,7 +42,7 @@ export default function ThreeBackground() {
         // Animate
         const animate = () => {
             requestAnimationFrame(animate)
-            points.rotation.x -= 0.0005
+            points.rotation.x -= 0.0015
             points.rotation.y -= 0.0018
             renderer.render(scene, camera)
         }
