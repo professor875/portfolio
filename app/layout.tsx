@@ -1,5 +1,6 @@
 import "./globals.css";
 import ThreeBackground from "../components/ThreeBackground";
+import ContactSection from "../components/Contact";
 
 export default function RootLayout({children}: { children: React.ReactNode }) {
     return (

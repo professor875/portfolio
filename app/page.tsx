@@ -5,6 +5,7 @@ import meImg from "../public/me.png"
 import meImg1 from "../public/me1.png"
 import SkillsSection from "../components/Skills";
 import ProjectsSection from "../components/Projects";
+import ContactSection from "../components/Contact";
 
 export default function Home() {
     return (<>
@@ -64,7 +65,9 @@ export default function Home() {
 
             <ProjectsSection />
 
+            <hr className="border border-black w-full m-20"/>
 
+            <ContactSection />
 
         </>
     );
