@@ -65,10 +65,9 @@ export default function Home() {
 
             <ProjectsSection />
 
-            <hr className="border border-black w-full m-20"/>
+            <hr className="border border-black w-full my-20"/>
 
             <ContactSection />
-
         </>
     );
 }

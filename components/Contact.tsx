@@ -6,41 +6,28 @@ import tabootv from "../public/tabootv.webp";
 import link from "../public/link.svg"
 
 
-const projects = [
-    {
-        title: "Tabootv",
-        description:
-            "Taboo.TV is a private, content-driven platform created by a YouTuber to entertain their community while offering greater control and flexibility compared to YouTube.",
-        image: tabootv,
-        link: "https://tabootv.com",
-    },
-    {
-        title: "Capitalclub",
-        description:
-            "Capital Club is a private ecosystem and academy. It offers members access to exclusive courses, networking events, and a VIP marketplace with discounted products and services.",
-        image: me,
-        link: "https://capitalclub.com",
-    },
-    {
-        title: "Andalus",
-        description:
-            "Andalus Institute is an online platform dedicated to teaching Arabic, offering structured learning with real-time support, live speaking sessions, and a supportive community.",
-        image: me,
-        link: "https://andalusinstitute.com",
-    },
-];
+const detail = {
+    email: "codephantom404@gmail.com",
+    socials: {
+        github: "https://github.com/professor875/",
+        linkedin: "https://www.linkedin.com/in/meet-mubashir-khan",
+        upwork: "https://www.upwork.com/freelancers/~01134456deeb0a45f4?mp_source=share",
+    }
+}
 
 export default function ContactSection() {
     return (
 
         <div className="mx-auto w-full">
             <div
-                className="grid lg:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-4xl max-lg:max-w-2xl bg-black [box-shadow:0_2px_10px_-3px_white] rounded-xl">
-                <div>
-                    <h2 className="text-cyan-400 text-3xl font-bold">Let's Talk</h2>
-                    <p className="text-[15px] text-white/70 mt-4 leading-relaxed">I’m one of the 9% of people
-                        worldwide who actually check their emails — go ahead, try me.</p>
-                    <div className="mt-12">
+                className="grid lg:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-4xl max-lg:max-w-2xl bg-black/85 [box-shadow:0_2px_10px_-3px_white] rounded-xl">
+                <div className="flex flex-wrap justify-between items-start gap-12">
+                    <div>
+                        <h2 className="text-cyan-400 text-3xl font-bold">Let's Talk</h2>
+                        <p className="text-[15px] text-white/70 mt-4 leading-relaxed">I’m one of the 9% of people
+                            worldwide who actually check their emails — go ahead, try me.</p>
+                    </div>
+                    <div>
                         <h2 className="text-cyan-400 text-base font-semibold">Email</h2>
                         <ul className="mt-4">
                             <li className="flex items-center">
@@ -61,36 +48,40 @@ export default function ContactSection() {
                         </ul>
                     </div>
 
-                    <div className="mt-12">
+                    <div className="">
                         <h2 className="text-cyan-400 text-base font-semibold">Socials</h2>
-                        <ul className="flex mt-4 space-x-4">
-                            <li className="bg-gray-200 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                <a href="javascript:void(0)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#000'
-                                         viewBox="0 0 24 24">
-                                        <path
-                                            d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
-                                            data-original="#000000"/>
+                        <ul className="flex mt-4 space-x-8">
+                            <li>
+                                <a href={detail.socials.linkedin} target="_blank" rel="noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                         viewBox="0 0 256 256">
+                                        <g fill="none">
+                                            <rect width="256" height="256" fill="#fff" rx="60"/>
+                                            <rect width="256" height="256" fill="#0a66c2" rx="60"/>
+                                            <path fill="#fff"
+                                                  d="M184.715 217.685h29.27a4 4 0 0 0 4-3.999l.015-61.842c0-32.323-6.965-57.168-44.738-57.168c-14.359-.534-27.9 6.868-35.207 19.228a.32.32 0 0 1-.595-.161V101.66a4 4 0 0 0-4-4h-27.777a4 4 0 0 0-4 4v112.02a4 4 0 0 0 4 4h29.268a4 4 0 0 0 4-4v-55.373c0-15.657 2.97-30.82 22.381-30.82c19.135 0 19.383 17.916 19.383 31.834v54.364a4 4 0 0 0 4 4M38 59.628c0 11.864 9.767 21.626 21.632 21.626c11.862-.001 21.623-9.769 21.623-21.631C81.253 47.761 71.491 38 59.628 38C47.762 38 38 47.763 38 59.627m6.959 158.058h29.307a4 4 0 0 0 4-4V101.66a4 4 0 0 0-4-4H44.959a4 4 0 0 0-4 4v112.025a4 4 0 0 0 4 4"/>
+                                        </g>
                                     </svg>
                                 </a>
                             </li>
-                            <li className="bg-gray-200 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                <a href="javascript:void(0)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#000'
-                                         viewBox="0 0 511 512">
-                                        <path
-                                            d="M111.898 160.664H15.5c-8.285 0-15 6.719-15 15V497c0 8.285 6.715 15 15 15h96.398c8.286 0 15-6.715 15-15V175.664c0-8.281-6.714-15-15-15zM96.898 482H30.5V190.664h66.398zM63.703 0C28.852 0 .5 28.352.5 63.195c0 34.852 28.352 63.2 63.203 63.2 34.848 0 63.195-28.352 63.195-63.2C126.898 28.352 98.551 0 63.703 0zm0 96.395c-18.308 0-33.203-14.891-33.203-33.2C30.5 44.891 45.395 30 63.703 30c18.305 0 33.195 14.89 33.195 33.195 0 18.309-14.89 33.2-33.195 33.2zm289.207 62.148c-22.8 0-45.273 5.496-65.398 15.777-.684-7.652-7.11-13.656-14.942-13.656h-96.406c-8.281 0-15 6.719-15 15V497c0 8.285 6.719 15 15 15h96.406c8.285 0 15-6.715 15-15V320.266c0-22.735 18.5-41.23 41.235-41.23 22.734 0 41.226 18.495 41.226 41.23V497c0 8.285 6.719 15 15 15h96.403c8.285 0 15-6.715 15-15V302.066c0-79.14-64.383-143.523-143.524-143.523zM466.434 482h-66.399V320.266c0-39.278-31.953-71.23-71.226-71.23-39.282 0-71.239 31.952-71.239 71.23V482h-66.402V190.664h66.402v11.082c0 5.77 3.309 11.027 8.512 13.524a15.01 15.01 0 0 0 15.875-1.82c20.313-16.294 44.852-24.907 70.953-24.907 62.598 0 113.524 50.926 113.524 113.523zm0 0"
-                                            data-original="#000000"/>
+
+                            <li>
+                                <a href={detail.socials.github} target="_blank" rel="noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                              d="M11.996 1.284a10.986 10.986 0 0 0-3.472 21.412c.548.095.722-.227.722-.517c0-.263.006-.991 0-1.91c-3.057.662-3.688-1.448-3.688-1.448a2.9 2.9 0 0 0-1.22-1.607c-.997-.682.075-.669.075-.669a2.3 2.3 0 0 1 1.683 1.131a2.34 2.34 0 0 0 3.197.914a2.34 2.34 0 0 1 .697-1.464c-2.439-.279-5.004-1.22-5.004-5.432a4.25 4.25 0 0 1 1.132-2.948a3.94 3.94 0 0 1 .107-2.907s.924-.295 3.02 1.128a10.4 10.4 0 0 1 5.503 0c2.102-1.422 3.018-1.128 3.018-1.128c.405.92.444 1.96.109 2.907a4.24 4.24 0 0 1 1.13 2.95c0 4.223-2.569 5.15-5.016 5.42a2.6 2.6 0 0 1 .752 2.026v3.041c0 .294.177.619.735.512a10.986 10.986 0 0 0-3.48-21.411"/>
                                     </svg>
                                 </a>
                             </li>
-                            <li className="bg-gray-200 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                <a href="javascript:void(0)">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#000'
-                                         viewBox="0 0 24 24">
+
+                            <li>
+                                <a href={detail.socials.upwork} target="_blank" rel="noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="50"
+                                         viewBox="0 0 512 153">
+                                        <path fill="#6fda44"
+                                              d="M140.107 96.628c-8.321 0-16.118-3.523-23.202-9.258l1.725-8.096l.075-.3c1.536-8.62 6.409-23.089 21.402-23.089c11.244 0 20.39 9.146 20.39 20.39c-.038 11.207-9.183 20.353-20.39 20.353m0-61.395c-19.154 0-33.996 12.444-40.03 32.909c-9.221-13.831-16.193-30.435-20.278-44.416H59.184v53.636c0 10.57-8.621 19.19-19.191 19.19s-19.19-8.62-19.19-19.19V23.726H.186v53.636c-.075 21.965 17.804 39.993 39.768 39.993S79.8 99.327 79.8 77.362v-8.995c4.01 8.358 8.92 16.791 14.88 24.288l-12.632 59.37h21.103l9.145-43.066c8.021 5.135 17.242 8.359 27.812 8.359c22.601 0 41.005-18.516 41.005-41.118c0-22.564-18.404-40.967-41.005-40.967"/>
                                         <path
-                                            d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z">
-                                        </path>
+                                            d="m244.043 37.557l13.306 53.636l14.656-53.636h17.466l-22.526 77.512h-17.467l-13.83-53.974l-13.794 53.936h-17.466L181.86 37.52h17.467l14.655 53.636l13.306-53.636h16.754zm87.22-2.324c-22.676 0-41.042 18.403-41.042 41.042c0 22.677 18.403 41.043 41.042 41.043c22.677 0 41.08-18.366 41.08-41.043c0-22.676-18.403-41.042-41.08-41.042m0 65.218c-13.343 0-24.138-10.795-24.138-24.138s10.832-24.138 24.138-24.138c13.344 0 24.138 10.794 24.138 24.138c0 13.306-10.794 24.138-24.138 24.138m90.968-45.54c-11.731 0-21.214 9.52-21.214 21.214v38.906h-17.58V37.557h17.58v11.919s7.496-11.957 22.901-11.957h5.397v17.392zm58.997 18.366c12.48-7.047 20.952-20.428 20.952-35.758H484.6c0 12.931-10.494 23.426-23.425 23.426h-2.362V.15h-17.578v114.88h17.578V78.524h2.1c1.724 0 3.973 1.125 4.985 2.511l24.962 33.996h21.065z"/>
                                     </svg>
                                 </a>
                             </li>
