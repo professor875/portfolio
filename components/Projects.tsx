@@ -1,14 +1,17 @@
 'use client';
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
-import { motion } from "framer-motion";
 import me from "../public/me.png"
+import tabootv from "../public/tabootv.webp";
+
+import link from "../public/link.svg"
+
+
 const projects = [
   {
     title: "Tabootv",
     description:
         "Taboo.TV is a private, content-driven platform created by a YouTuber to entertain their community while offering greater control and flexibility compared to YouTube.",
-    image:me,
+    image:tabootv,
     link: "https://tabootv.com",
   },
   {
@@ -29,61 +32,31 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-      <section className="text-white py-20">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold mb-2">All Creative Works.</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            A selection of my favorite projects — blending performance, aesthetics, and seamless user experience.
-          </p>
-          <a
-              href="#"
-              className="text-green-400 mt-4 inline-block hover:underline"
-          >
-            Explore more →
-          </a>
+      <div className="grid md:grid-cols-2 gap-8 mt-20 mx-auto max-w-[1100px]">
+        <div className="text-[22px]">
+          <h3 className="font-bold md:text-[45px] text-[45px] text-white md:leading-[80px] leading-[80px] [text-shadow:4px_4px_4px_black]">All Creative Works.</h3>
+
+          <p className="responsive mt-1 [text-shadow:4px_4px_4px_black]">Here's some of my projects that I have worked on.</p>
+
+          <p className="responsive text-cyan-400 cursor-pointer [text-shadow:4px_4px_4px_black]">Explore more <span
+              className="text-2xl font-medium">→</span></p>
         </div>
 
-        {/* Project Cards */}
-        <div className="flex flex-col gap-16">
-          {projects.map((project, index) => (
-              <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ duration: 0.3 }}
-                  className={`flex flex-col lg:flex-row items-center gap-8 ${
-                      index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-                  }`}
-              >
-                {/* Image */}
-                <div className="relative w-full lg:w-1/2 h-72 rounded-2xl overflow-hidden shadow-lg">
-                  <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover rounded-2xl"
-                  />
-                </div>
+        {projects.map((project, index) => (
+            <div className={`border border-white/40 shadow hover:shadow-xl shadow-cyan-400 transition-all duration-300 cursor-pointer hover:scale-105 w-full grid rounded-[10px] overflow-hidden bg-black p-8 ${index === 1 ? ' md:translate-y-[-30%] lg:translate-y-[-50%] ' : ''}`} key={index}>
+              <Image src={project.image} alt="myimage" className="w-full aspect-video object-contain"/>
 
-                {/* Info */}
-                <div className="lg:w-1/2 space-y-4">
-                  <h3 className="text-2xl font-semibold flex items-center gap-2">
-                    {project.title}
-                    <a
-                        href={project.link}
-                        target="_blank"
-                        className="text-gray-400 hover:text-green-400"
-                    >
-                      <ExternalLink size={18} />
-                    </a>
-                  </h3>
-                  <p className="text-gray-400 leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-              </motion.div>
-          ))}
-        </div>
-      </section>
+              <div className="flex justify-between items-center my-2">
+                <h3 className="text-xl">{ project.title }</h3>
+                <svg data-v-36789358="" stroke="currentColor" fill="white" stroke-width="0" viewBox="0 0 512 512" aria-label="project link" height="15" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>
+              </div>
+
+              <hr className="border border-white/30 w-full my-2"/>
+
+              <p className="text-white/60">{project.description}</p>
+            </div>
+        ))}
+      </div>
+
   );
 }

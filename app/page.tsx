@@ -62,60 +62,8 @@ export default function Home() {
 
             <SkillsSection/>
 
-            {/*<ProjectsSection />*/}
+            <ProjectsSection />
 
-            <div className="grid md:grid-cols-2 gap-8 mt-20 mx-auto max-w-[1100px]">
-                <div className="text-[22px]">
-                    <h3 className="font-bold md:text-[45px] text-[45px] text-white md:leading-[80px] leading-[80px] [text-shadow:4px_4px_4px_black]">All Creative Works.</h3>
-
-                    <p className="responsive mt-1 [text-shadow:4px_4px_4px_black]">Here's some of my projects that I have worked on.</p>
-
-                    <p className="responsive text-cyan-400 cursor-pointer [text-shadow:4px_4px_4px_black]">Explore more <span
-                        className="text-2xl font-medium">→</span></p>
-                </div>
-
-
-                <div className="border-2 border-white shadow-xl w-full grid rounded-[10px] overflow-hidden bg-black p-8">
-                    <Image src={meImg1} alt="myimage" className="w-full aspect-square object-cover"/>
-
-                    <div className="flex justify-between items-center my-2">
-                        <h3 className="text-xl">Capital Club</h3>
-                        <p>-+</p>
-                    </div>
-
-                    <hr className="border border-white/30 w-full my-2"/>
-
-                    <p className="text-white/60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur illo in iure qui quod suscipit ut voluptatum! Hic in, iure laborum neque numquam quasi repellat sapiente sint tempore voluptate.</p>
-                </div>
-
-                <div className="border-2 border-white shadow-xl w-full grid rounded-[10px] overflow-hidden bg-black p-8 translate-y-[-50%]">
-                    <Image src={meImg1} alt="myimage" className="w-full aspect-square object-cover"/>
-
-                    <div className="flex justify-between items-center my-2">
-                        <h3 className="text-xl">Capital Club</h3>
-                        <p>-+</p>
-                    </div>
-
-                    <hr className="border border-white/30 w-full my-2"/>
-
-                    <p className="text-white/60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur illo in iure qui quod suscipit ut voluptatum! Hic in, iure laborum neque numquam quasi repellat sapiente sint tempore voluptate.</p>
-                </div>
-
-                <div className="border-2 border-white shadow-xl w-full grid rounded-[10px] overflow-hidden bg-black p-8">
-                    <Image src={meImg1} alt="myimage" className="w-full aspect-square object-cover"/>
-
-                    <div className="flex justify-between items-center my-2">
-                        <h3 className="text-xl">Capital Club</h3>
-                        <p>-+</p>
-                    </div>
-
-                    <hr className="border border-white/30 w-full my-2"/>
-
-                    <p className="text-white/60">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur illo in iure qui quod suscipit ut voluptatum! Hic in, iure laborum neque numquam quasi repellat sapiente sint tempore voluptate.</p>
-                </div>
-
-
-            </div>
 
 
         </>
