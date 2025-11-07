@@ -57,7 +57,7 @@ export default function ProjectDetails() {
     ]
 
     return (
-        <div className="grid-cols-8 md:grid-cols-12 gap-8 mt-6 w-full hidden md:grid">
+        <div className="grid grid-cols-8 md:grid-cols-12 gap-8 mt-6 w-full">
             <div className="col-span-8 space-y-6">
                 <MediumHeading id="overview">Overview</MediumHeading>
 
@@ -131,7 +131,7 @@ export default function ProjectDetails() {
 
             </div>
 
-            <div className="bg-black/70 col-span-4 sticky top-[150px] flex flex-col gap-2 p-4 h-fit">
+            <div className="bg-black/70 col-span-4 sticky top-[150px] flex-col gap-2 p-4 h-fit hidden md:flex">
 
                 <SmallHeading>Table of Contents</SmallHeading>
 
