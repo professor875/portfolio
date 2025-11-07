@@ -12,6 +12,7 @@ import MediumHeading from "../../../components/MediumHeading";
 import SmallHeading from "../../../components/SmallHeading";
 import Paragraph from "../../../components/Paragraph";
 
+
 import {useEffect, useState} from "react";
 
 export default function ProjectDetails() {
